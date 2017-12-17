@@ -1,13 +1,12 @@
+const config = require('../config/config');
 const mongoose = require('mongoose');
-const config   = require('./config');
-const db = mongoose.connection;
-mongoose.Promise = global.Promise;
-mongoose.connect(config.mongodb.dbURI);
 
-db.on('error', console.error);
+mongoose.Promise = Promise;
 
-db.once('open', function() {
-	console.log("Connect MongoDB!");
+const mongodbUrl = config.dbConfig.dbURI;
+
+const connect = () => mongoose.connect(mongodbUrl, {
+  useMongoClient: true
 });
 
-module.exports = mongoose;
+exports.connect = connect

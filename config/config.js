@@ -13,22 +13,19 @@ const getDbConfig = () => {
     switch(config.environment) {
         case 'test': {
             return  {
-                dbURI: "mongodb://127.0.0.1:27017",
-                dbName: "TABD-teste"
+                dbURI: "mongodb://127.0.0.1:27017/TABD-test"            
             };
             break;
         }
         case 'development': {
             return {
-                dbURI: "mongodb://127.0.0.1:27017",
-                dbName: "TABD-dev"
+                dbURI: "mongodb://127.0.0.1:27017/TABD-dev"            
             };
             break;
         }
         case 'production': {
             return {
-                dbURI: "mongodb+srv://adrianlemess:03101994@fundatec-sagtt.mongodb.net",
-                dbName: "TABD"
+                dbURI: "mongodb://adrianlemess:03101994@fundatec-shard-00-00-sagtt.mongodb.net:27017,fundatec-shard-00-01-sagtt.mongodb.net:27017,fundatec-shard-00-02-sagtt.mongodb.net:27017/admin?replicaSet=Fundatec-shard-0&ssl=true/TABD" 
             };
             break;
         }
