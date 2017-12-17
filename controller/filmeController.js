@@ -1,4 +1,4 @@
-const mongoHandler = require("../service/mongoHandler");
+const mongoHandler = require("../service/filmeService");
 const Filme = require('../model/filme');
 
 const COLLECTION = "movies";
