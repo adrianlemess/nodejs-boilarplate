@@ -25,7 +25,7 @@ const getDbConfig = () => {
         }
         case 'production': {
             return {
-                dbURI: "mongodb://adrianlemess:03101994@fundatec-shard-00-00-sagtt.mongodb.net:27017,fundatec-shard-00-01-sagtt.mongodb.net:27017,fundatec-shard-00-02-sagtt.mongodb.net:27017/admin?replicaSet=Fundatec-shard-0&ssl=true/TABD" 
+                dbURI: `mongodb://adrianlemess:03101994@fundatec-shard-00-00-sagtt.mongodb.net:27017,fundatec-shard-00-01-sagtt.mongodb.net:27017,fundatec-shard-00-02-sagtt.mongodb.net:27017/TABD?ssl=true&replicaSet=Fundatec-shard-0&authSource=admin` 
             };
             break;
         }
