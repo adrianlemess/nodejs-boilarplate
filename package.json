@@ -1,0 +1,23 @@
+{
+  "name": "trabalho-final",
+  "version": "1.0.0",
+  "description": "Trabalho Final TABD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development && nodemon index.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "Banco No-SQL",
+    "Trabalho Final TABD"
+  ],
+  "author": "Fulano1, Fulano2",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^3.0.0-rc0"
+  }
+}
