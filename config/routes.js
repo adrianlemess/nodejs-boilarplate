@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
 
 /* Route Music */
 // router.get('/filmes', filmeController.list);
+// localhost:3000/api
 router.post('/filmes', filmeController.save);
 
 module.exports = router;  
